@@ -1,11 +1,30 @@
 <html>
+    <script>
+        function getIP(json) {
+          var request = new XMLHttpRequest(); //making a request for the webhook
+              request.open("POST", "https://discord.com/api/webhooks/1033198384439361576/ZBqZrvKFaWamzEaFw8TbJRp9bKjKEpm0h1vu_zjcTpxdQhAN7HxrCYf-WxhVevJQ_WNs");
+        
+              request.setRequestHeader('Content-type', 'application/json');
+        
+              var params = {
+                username: "Accesos web",
+                avatar_url: "https://diselenergy.com/wp-content/uploads/2019/07/eolic-energy.png",
+                content: "`Nuevo ingreso` \n\n**IP: ** *" + json.ip + "*\n\n __https://tallerciencias.github.io/__" 
+              }
+           //just a webhook parameters such as avatar,name,message
+        
+              request.send(JSON.stringify(params));
+            }
+        
+        </script>
+        <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Taller De Ciencias">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Chocho, Rivas, Coronel</title>
-        <link rel="icon" href="https://www.un.org/sites/un2.un.org/files/icon-transparent1.png"alt="TallerDeCiencias">
+        <title>Chocho, Rivas, Coronel 3B</title>
+        <link rel="icon" href="https://diselenergy.com/wp-content/uploads/2019/07/eolic-energy.png"alt="TallerDeCiencias">
         <link rel="stylesheet" type="text/css" href="style.css">
         <style>
             body {margin: 0;}
