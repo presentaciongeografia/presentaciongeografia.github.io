@@ -1,45 +1,35 @@
-<html>
-    <script>
-        function getIP(json) {
-          var request = new XMLHttpRequest(); //making a request for the webhook
-              request.open("POST", "https://discord.com/api/webhooks/1033198384439361576/ZBqZrvKFaWamzEaFw8TbJRp9bKjKEpm0h1vu_zjcTpxdQhAN7HxrCYf-WxhVevJQ_WNs");
-        
-              request.setRequestHeader('Content-type', 'application/json');
-        
-              var params = {
-                username: "Accesos web",
-                avatar_url: "https://diselenergy.com/wp-content/uploads/2019/07/eolic-energy.png",
-                content: "`Nuevo ingreso` \n\n**IP: ** *" + json.ip + "*\n\n __https://tallerciencias.github.io/__" 
-              }
-           //just a webhook parameters such as avatar,name,message
-        
-              request.send(JSON.stringify(params));
-            }
-        
-        </script>
-        <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Taller De Ciencias">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="es">
 
-        <title>Chocho, Rivas, Coronel 3B</title>
-        <link rel="icon" href="https://diselenergy.com/wp-content/uploads/2019/07/eolic-energy.png"alt="TallerDeCiencias">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <style>
-            body {margin: 0;}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identidad</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1070187371519291483/1126312151775203338/1200px-Escudo_de_la_Provincia_de_NeuquC3A9n.png"alt="Geografia">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
 
-            iframe {
-                height:calc(100vh - 4px);
-                width:calc(100vw - 4px);
-                box-sizing: border-box;
-            }
-        </style>
+<body>
+
+    <div class="container">
+        <img src="https://cdn.discordapp.com/attachments/1070187371519291483/1126312151775203338/1200px-Escudo_de_la_Provincia_de_NeuquC3A9n.png" alt="">
+        <h1>Identidad Colectiva: Neuquén</h1>
+        <div class="boton">
+            <a href="identidad/index.html">
+            <button>Presentación Power Point</button>
         
-    </head>
+        <div class="boton2">
+        <a href="encuesta/index.html">
+            <button>Encuesta identidad</button>
+        </div>
+    </div>
 
-    <body>
-        <iframe src="https://onedrive.live.com/embed?cid=8BE3D12DEF9D47C8&amp;resid=8BE3D12DEF9D47C8%211797&amp;authkey=ANP56NpXSwNVN0Y&amp;em=2&amp;wdAr=1.7777777777777777" frameborder="0" allowfullscreen></iframe>
-    </body> 
+
+
+</body>
 
 </html>
